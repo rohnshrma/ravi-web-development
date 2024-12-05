@@ -1,0 +1,135 @@
+/* Resetting default margin and padding for all elements to ensure consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the div with id 'main' */
+#main {
+  /* Center-aligns the text content */
+  text-align: center;
+
+  /* Sets the background color as a fallback (solid color) */
+  background-color: #f4a909;
+
+  /* Fallback for the gradient background */
+  background: #f4a909;
+
+  /* Linear gradient background with vertical transition between two colors */
+  background: linear-gradient(#f4a909, #fec714);
+
+  /* Linear gradient background transitioning top to bottom */
+  background: linear-gradient(180deg, #f4a909, #fec714);
+
+  /* Linear gradient background transitioning diagonally at a 45-degree angle */
+  background: linear-gradient(45deg, #f4a909 50%, #fec714 50%);
+
+  /* Sets a background image from a URL */
+  background: url(https://static.vecteezy.com/system/resources/thumbnails/002/393/823/small/gradient-blue-background-free-vector.jpg);
+
+  /* Another background image from a local file path */
+  background: url(./images/background-7071705_1920.jpg);
+
+  /* Sets the text color to white */
+  color: #fff;
+
+  /* Combines a semi-transparent gradient overlay with a background image */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/background-7071705_1920.jpg);
+
+  /* Repeats the background image horizontally */
+  background-repeat: repeat-x;
+
+  /* Repeats the background image vertically */
+  background-repeat: repeat-y;
+
+  /* Prevents the background image from repeating */
+  background-repeat: no-repeat;
+
+  /* Scales the background image to fit its container's width or height */
+  background-size: contain;
+
+  /* Scales the background to completely cover its container */
+  background-size: cover;
+
+  /* Positions the background at the top */
+  background-position: top;
+
+  /* Centers the background */
+  background-position: center;
+
+  /* Fixes the background image during scrolling */
+  background-attachment: fixed;
+
+  /* Sets padding (inner space around content) */
+
+  /* Padding: top 4rem, right and left 8rem, bottom 4rem */
+  padding: 4rem 8rem;
+
+  /* Padding: top and bottom 40px, right and left 80px */
+  padding: 40px 80px;
+
+  /* Padding: top 40px, right and left 50px, bottom 80px */
+  padding: 40px 50px 80px;
+
+  /* Padding: top 10px, right 20px, bottom 30px, left 40px */
+  padding: 10px 20px 30px 40px;
+
+  /* Padding for each side individually */
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  /* Sets margin (outer space around the element) */
+
+  /* Margin: 2rem on all sides */
+  margin: 2rem;
+
+  /* Margin: 2rem top and bottom, 4rem right and left */
+  margin: 2rem 4rem;
+
+  /* Margin: 2rem top, 4rem right and left, 8rem bottom */
+  margin: 2rem 4rem 8rem;
+
+  /* Margin: top 2rem, right 4rem, bottom 8rem, left 12rem */
+  margin: 2rem 4rem 8rem 12rem;
+
+  /* Margin for each side individually */
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  /* Sets the border properties */
+
+  /* Border color as grey */
+  border-color: grey;
+
+  /* Border style as inset */
+  border-style: inset;
+
+  /* Border width as 20px */
+  border-width: 20px;
+
+  /* Shorthand: sets border width, style, and color */
+  border: 20px inset black;
+
+  /* Borders for specific sides */
+  border-top: 20px inset black;
+  border-right: 20px inset black;
+  border-bottom: 20px inset black;
+  border-left: 20px inset black;
+
+  /* Rounds the corners of the border by 20px */
+  border-radius: 20px;
+}
+
+/* Styling for images inside #main */
+#main img {
+  /* Sets the image width to 250px */
+  width: 250px;
+
+  /* Makes the image circular by setting border-radius to 50% */
+  border-radius: 50%;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about.html">About Page</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
+    </ul>
+
+    <hr>
+
+    <form style="background-color: wheat;padding: 2rem;" action="mailto:rohn11shrma@gmail.com" method="post"
+        enctype="text/plain">
+        <div>
+            <label for="fName">Full Name : </label>
+            <input type="text" required name="name" id="fName" placeholder="Enter full name...">
+        </div>
+        <div>
+            <label for="email">Email address : </label>
+            <input type="email" required name="email" id="email" placeholder="Enter email address...">
+        </div>
+        <div>
+            <label for="pass">Password : </label>
+            <input type="password" required name="password" id="pass" placeholder="Enter Password...">
+        </div>
+        <div>
+            Gender : <br />
+            <label for="male">Male :</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female :</label>
+            <input type="radio" name="gender" id="female">
+            <label for="others">Others :</label>
+            <input type="radio" name="gender" id="others">
+        </div>
+
+        <div>
+            Skills : <br />
+            <label for="html">HTML :</label>
+            <input checked type="checkbox" name="skills" id="html">
+            <label for="css">CSS :</label>
+            <input type="checkbox" name="skills" id="css">
+            <label for="js">Javascript :</label>
+            <input type="checkbox" name="skills" id="js">
+        </div>
+
+        <div>
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="" selected disabled>Courses</option>
+
+                <option value="web_development">Web Development</option>
+                <option value="mern_stack_development">MERN Stack Development </option>
+                <option value="data_analytics">Data Analytics</option>
+            </select>
+        </div>
+
+        <div>
+            <label> Date of Birth : <input type="date" name="dob" id="dob"> </label>
+            <!-- <label> Date of Birth : <input type="datetime" name="dob" id="dob"> </label> -->
+            <!-- <label> Date of Birth : <input type="datetime-local" name="dob" id="dob"> </label> -->
+        </div>
+
+        <div>
+            <label> Profile Picture : <input type="file" name="profile_picture" accept=".jpg .png .jpeg"> </label>
+        </div>
+
+
+        <label>Comments : <br />
+            <textarea name="Comments" rows="10" cols="30" placeholder="Enter your comments here..."></textarea>
+        </label>
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.3817713568887!2d2.2919063766286705!3d48.858370071332125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e1!3m2!1sen!2sin!4v1733292759083!5m2!1sen!2sin"
+            width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+</body>
+
+</html>

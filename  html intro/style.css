@@ -1,0 +1,14 @@
+/* text related */
+
+p {
+  font-size: 18px;
+  font-family: Arial, cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  /* text-decoration: underline red wavy; */
+  font-style: italic;
+  /* x ,y , b , c */
+  /* text-shadow: 0 2px 0 red; */
+  text-align: justify;
+}
