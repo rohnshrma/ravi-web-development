@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#parent {
+  background-color: #ccc;
+  padding: 1rem;
+}
+#parent::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  height: 100px;
+  border: 2px solid black;
+}
+
+.b1 {
+  float: left;
+  width: 30%;
+  background-color: tan;
+}
+.b2 {
+  float: left;
+  width: 30%;
+  background-color: teal;
+}
+.b3 {
+  float: left;
+  width: 30%;
+  background-color: peru;
+}
