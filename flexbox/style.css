@@ -6,11 +6,28 @@
 #parent {
   background-color: #ccc;
   padding: 1rem;
-}
-#parent::after {
-  content: "";
-  display: table;
-  clear: both;
+  height: 400px;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column; */
+
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: safe; */
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: last baseline; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  flex-wrap: nowrap;
 }
 
 .box {
@@ -19,17 +36,16 @@
 }
 
 .b1 {
-  float: left;
-  width: 30%;
+  width: 400px;
   background-color: tan;
 }
 .b2 {
-  float: left;
-  width: 30%;
+  width: 400px;
+
   background-color: teal;
 }
 .b3 {
-  float: left;
-  width: 30%;
+  width: 400px;
+
   background-color: peru;
 }

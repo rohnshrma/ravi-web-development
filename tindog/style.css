@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --pink: #ff4b67;
+  --white: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+}
+
+p {
+  color: #1f1f1f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.row {
+  margin: 0;
+}
+
+/* header  */
+
+header {
+  overflow: hidden;
+  color: var(--white);
+  height: 80vh;
+  padding: 4rem 8rem 0;
+  background-color: var(--pink);
+}
+header .col-lg-6 {
+  padding: 0;
+}
+
+/* nav */
+
+header .custom-nav {
+  padding: 0 !important;
+}
+header .custom-nav .navbar-brand {
+  font-size: 3rem;
+  font-family: Ubuntu, sans-serif;
+}
+header .custom-nav .nav-item {
+  margin-left: 1rem;
+}
+header .custom-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+}
+
+header #main {
+  margin-top: 4rem;
+}
+header #main .content-bx h1 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+header #main .img-bx img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: relative;
+  left: 100px;
+  filter: drop-shadow(-10px 10px 4px #000);
+}
