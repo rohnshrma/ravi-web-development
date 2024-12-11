@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(skyblue, rgb(246, 221, 175));
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+#main .mario {
+  width: 200px;
+  mix-blend-mode: multiply;
+}
+
+.cloud {
+  position: absolute;
+}
+.cloud-stand {
+  width: 300px;
+  position: absolute;
+  bottom: calc(100vh - 68%);
+  z-index: +1;
+}
+
+.c1 {
+  width: 350px;
+  left: 0;
+  top: 100px;
+}
+
+.c2 {
+  width: 320px;
+  right: 0;
+  top: 200px;
+}
+.c3 {
+  width: 250px;
+  left: 300px;
+  top: 300px;
+}
+.c4 {
+  width: 250px;
+  right: 400px;
+  top: 70px;
+}
+
+.content img {
+  width: 300px;
+  filter: drop-shadow(0 0 10px #000);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50vh + 150px);
+  bottom: 50px;
+}
