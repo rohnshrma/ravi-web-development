@@ -46,6 +46,6 @@ var txt = "hello world this is ravi and he is a web developer.";
 
 // console.log(txt.includes("z"));
 
-// MCDONALDS:McDonalds
-// mcdonalds: McDonalds
-// mCdOnAlDs: McDonalds
+// MCDONALDS : McDonalds
+// mcdonalds : McDonalds
+// mCdOnAlDs : McDonalds
