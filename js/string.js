@@ -49,3 +49,72 @@ var txt = "hello world this is ravi and he is a web developer.";
 // MCDONALDS : McDonalds
 // mcdonalds : McDonalds
 // mCdOnAlDs : McDonalds
+
+// console.log(txt.lastIndexOf("a"));
+
+// console.log(txt.length);
+// console.log(txt.padStart(67));
+// console.log(txt.padStart(67, "$%").padEnd(80, "*&").length);
+
+// console.log("           rohan sharma        ".trim());
+// console.log("           rohan sharma        ".trimStart());
+// console.log("           rohan sharma        ".trimEnd());
+// console.log("           rohan          sharma        ".trim());
+
+// console.log("           rohan          sharma        ".replace(/ /g, "x"));
+// console.log("           rohan          sharma        ".replace(/ /g, ""));
+
+// var num = 123;
+// console.log(num.toString());
+
+// var marks = [1, 2, 3];
+// console.log(marks.toString());
+
+// var x = String.toString(123);
+// console.log(x);
+
+// x = marks.join("-");
+// console.log(x);
+
+// in python
+// var x = "*".join(marks);
+// console.log(x);
+
+// console.log(txt.split());
+// console.log(txt.split(" "));
+// console.log(txt.split(""));
+// console.log(txt.split("", 3));
+
+// console.log(txt.slice(4)); // 4 : end
+// console.log(txt.slice(4, 10)); // 4 : 9
+
+// console.log(
+//   "                   rohan sharma                  ".replaceAll(" ", "X")
+// );
+
+// console.log(
+//   "                   rohan sharma                  ".replaceAll(" ", "X")
+// );
+
+// console.log(txt.search);
+
+// console.log(txt.search("is"));
+
+// console.log(txt.match("a"));
+// console.log(txt.match(/a/g));
+
+// ? pending
+// value of
+// var x = txt.matchAll(/a/g);
+
+// var x = new String("hello world");
+
+// var car = {
+//   model: "ford ",
+// };
+
+// console.log(x.valueOf());
+
+// console.log(car.valueOf());
+
+// txt.valueOf()
