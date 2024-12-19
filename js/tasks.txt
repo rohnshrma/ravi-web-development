@@ -1,0 +1,126 @@
+Practical Assignment: Combination of If-Else, For Loop, and Arrays
+
+Instructions:
+	1.	Solve the following tasks using JavaScript.
+	2.	Use if-else statements for decision-making.
+	3.	Use for loops for iteration wherever necessary.
+	4.	Use arrays to store and manipulate data.
+
+
+    Tasks
+
+    Task 1: Even or Odd Checker
+
+        Write a program that checks each number in an array of integers and prints whether it is even or odd.
+
+        Example Input:
+        [1, 2, 3, 4, 5]
+        Example Output:
+        1 is Odd
+        2 is Even
+        3 is Odd    
+        …
+
+    
+    
+    
+    Task 2: Find the Largest Number
+
+        Create a program that finds the largest number in an array of integers.
+
+        Example Input:
+        [23, 45, 12, 67, 34]
+        Example Output:
+        The largest number is 67
+
+
+    
+    
+    Task 3: Count Vowels in Strings
+
+        Write a program to count the total number of vowels (a, e, i, o, u) in an array of strings.
+
+        Example Input:
+        ["hello", "world", "javascript"]
+        Example Output:
+        Total vowels: 7
+
+    
+    
+    Task 4: Calculate Total and Average
+
+        Create a program to calculate the total and average of numbers stored in an array.
+
+        Example Input:
+        [10, 20, 30, 40, 50]
+        Example Output:
+        Total: 150
+        Average: 30
+
+
+    
+    Task 5: Filter Positive Numbers
+
+    Write a program that filters and prints only the positive numbers from an array.
+
+    Example Input:
+    [-1, 3, -5, 7, 9, -2]
+    Example Output:
+    Positive numbers: 3, 7, 9
+
+
+
+    Task 6: Word Length Checker
+
+        Create a program that checks the length of each word in an array of strings and categorizes them as “Short” (length ≤ 4), “Medium” (length 5–7), or “Long” (length > 7).
+
+        Example Input:
+        ["apple", "is", "delicious", "and", "healthy"]
+        Example Output:
+        apple: Medium
+        is: Short
+        delicious: Long
+        …
+
+
+    Task 7: Reverse Array Elements
+
+        Write a program that reverses the order of elements in an array.
+
+        Example Input:
+        [1, 2, 3, 4, 5]
+        Example Output:
+        [5, 4, 3, 2, 1]
+
+
+
+    Task 8: Search an Element
+
+        Write a program to check if a specific element exists in an array. Print “Found” if the element exists and “Not Found” otherwise.
+
+        Example Input:
+        Array: [10, 20, 30, 40]
+        Search Element: 20
+        Example Output:
+        Found
+
+
+    Task 9: Count Even Numbers
+
+        Write a program to count the total number of even numbers in an array.
+
+        Example Input:
+        [12, 17, 19, 24, 36, 45]
+        Example Output:
+        Even numbers count: 3
+
+
+
+    Task 10: Replace Negative with Zero
+
+        Create a program that replaces all negative numbers in an array with 0.
+
+        Example Input:
+        [-5, 7, -3, 9, -8]
+        Example Output:
+        [0, 7, 0, 9, 0]
