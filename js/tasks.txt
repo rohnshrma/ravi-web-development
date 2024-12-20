@@ -61,12 +61,12 @@ Instructions:
     
     Task 5: Filter Positive Numbers
 
-    Write a program that filters and prints only the positive numbers from an array.
+        Write a program that filters and prints only the positive numbers from an array.
 
-    Example Input:
-    [-1, 3, -5, 7, 9, -2]
-    Example Output:
-    Positive numbers: 3, 7, 9
+        Example Input:
+        [-1, 3, -5, 7, 9, -2]
+        Example Output:
+        Positive numbers: 3, 7, 9
 
 
 
