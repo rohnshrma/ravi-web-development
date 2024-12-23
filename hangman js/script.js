@@ -1,66 +1,80 @@
-var words = [
-  "javascript",
-  "python",
-  "diagram",
-  "workspace",
-  "diapers",
-  "ghost",
-  "apple",
-];
-
-var word = words[Math.floor(Math.random() * words.length) | 0].toUpperCase();
-
-var displayWord = "";
-var wrongGuesses = "";
-var maxAttempts = 6;
-var attempsLeft = maxAttempts;
-var guessedCorrectly = false;
-
-for (var i = 0; i < word.length; i++) {
-  displayWord += "_ ";
-}
-console.log(displayWord, word);
-
-while (attempsLeft > 0 && displayWord.includes("_ ")) {
-  var guess = prompt("Guess a letter : ").toUpperCase();
-
-  if (guess.length !== 1 || !/[A-Z]/.test(guess)) {
-    console.log("Invalid Input. Please enter a single character only.");
-    continue;
+async function getRandomWord() {
+  try {
+    let response = await fetch("https://random-word-api.herokuapp.com/word");
+    let data = await response.json();
+    return data[0].toUpperCase();
+  } catch (err) {
+    console.error("Error fetching the random word:", err);
+    return "DEFAULT"; // Fallback word in case of an error
   }
+}
 
-  guessedCorrectly = false;
-  var updatedDisplayWord = "";
+async function startGame() {
+  try {
+    var word = await getRandomWord();
+    var displayWord = "";
+    var wrongGuesses = "";
+    var maxAttempts = word.length + 5;
+    var attemptsLeft = maxAttempts;
+    var guessedCorrectly = false;
 
-  for (var i = 0; i < word.length; i++) {
-    if (word[i] === guess) {
-      updatedDisplayWord += guess + " ";
-      guessedCorrectly = true;
-    } else {
-      updatedDisplayWord += displayWord[i * 2] + " ";
+    // Initialize the displayWord with underscores
+    for (var i = 0; i < word.length; i++) {
+      displayWord += "_ ";
     }
-  }
+    console.log("Word to guess:", displayWord.trim());
 
-  displayWord = updatedDisplayWord;
+    // Main game loop
+    while (attemptsLeft > 0 && displayWord.includes("_ ")) {
+      var guess = prompt("Guess a letter: ").toUpperCase();
 
-  if (guessedCorrectly) {
-    console.log("Good Guess");
-  } else {
-    if (!wrongGuesses.includes(guess)) {
-      wrongGuesses += guess + " ";
-      attempsLeft--;
-    } else {
-      console.log("You've already guessed this letter");
+      // Validate input
+      if (guess.length !== 1 || !/[A-Z]/.test(guess)) {
+        console.log("Invalid input. Please enter a single character only.");
+        continue;
+      }
+
+      guessedCorrectly = false;
+      var updatedDisplayWord = "";
+
+      // Update displayWord based on the guessed letter
+      for (var i = 0; i < word.length; i++) {
+        if (word[i] === guess) {
+          updatedDisplayWord += guess + " ";
+          guessedCorrectly = true;
+        } else {
+          updatedDisplayWord += displayWord[i * 2] + " "; // Preserve existing letters/underscores
+        }
+      }
+
+      displayWord = updatedDisplayWord;
+
+      if (guessedCorrectly) {
+        console.log("Good guess!");
+      } else {
+        if (!wrongGuesses.includes(guess)) {
+          wrongGuesses += guess + " ";
+          attemptsLeft--;
+        } else {
+          console.log("You've already guessed this letter.");
+        }
+        console.log("Wrong guess! Attempts left:", attemptsLeft);
+      }
+
+      // Display the current state of the game
+      console.log("Word: " + displayWord.trim());
+      console.log("Wrong guesses: " + wrongGuesses.trim());
     }
-    console.log("Wrong Guess! Attempts Left: " + attempsLeft);
+
+    // Check win/loss condition
+    if (!displayWord.includes("_ ")) {
+      console.log("Congratulations! You've guessed the word: " + word);
+    } else {
+      console.log("Game over! The word was: " + word);
+    }
+  } catch (err) {
+    console.log("Something went wrong");
   }
-
-  console.log("Words:" + displayWord);
-  console.log("Wrong Guesses: " + wrongGuesses);
 }
 
-if (!displayWord.includes("_ ")) {
-  console.log("Congratulations! You've guessed the word correctly");
-} else {
-  console.log("You've run out of attempts. The word was: " + word);
-}
+startGame();
