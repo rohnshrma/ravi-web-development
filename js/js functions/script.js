@@ -37,16 +37,19 @@ function drawCheck(board) {
 }
 
 function handleCellClick(e) {
-  const index = e.target.getAttribute("data-index");
-  console.log(index);
-  if (board[index] !== " " || !isGameActive) return;
+  if (!isGameActive) return;
+  const index = parseInt(e.target.getAttribute("data-index"));
+  if (board[index] !== " ") return;
+
   board[index] = currentPlayer;
   displayBoard();
 
   if (winCheck(board, currentPlayer)) {
     gameResult.textContent = `${currentPlayer} Wins!`;
+    isGameActive = false;
   } else if (drawCheck(board)) {
     gameResult.textContent = "Game Draw!";
+    isGameActive = false;
   } else {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     turnInfo.textContent = `${currentPlayer}'s turn`;
