@@ -35,3 +35,16 @@ var nums = [12, 34, 55, 3, 23, 34, 56, 677, 88, 9];
 // nums.map((num) => (sum += num));
 
 // console.log(sum);
+
+// some and every => true | false
+
+// var areEvens = nums.some((num) => num % 2 == 0);
+// var areEvens = nums.every((num) => num % 2 == 0);
+
+// console.log(areEvens);
+
+// console.log(nums.sort());
+
+// var sorted = nums.sort((a, b) => a - b);
+// var sorted = nums.sort((a, b) => b - a);
+// console.log(sorted);
