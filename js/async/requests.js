@@ -11,27 +11,46 @@
 
 // request.open("GET", url);
 // request.send();
-// const url = `https://jsonplaceholder.typicode.com/todos/3`;
+const url = `https://jsonplaceholder.typicode.com/todos/3`;
 
-// function sendRequest(url, cb) {
-//   const request = new XMLHttpRequest();
-//   request.open("GET", url);
-//   request.send();
-//   request.addEventListener("readystatechange", function () {
-//     if (request.readyState == 4 && request.status == 200) {
-//       cb(request.responseText, undefined);
-//     } else if (request.readyState == 4) {
-//       cb(undefined, "could not fetch the data");
-//     }
-//   });
-// }
+function sendRequest(url, cb) {
+  const request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.send();
+  request.addEventListener("readystatechange", function () {
+    if (request.readyState == 4 && request.status == 200) {
+      cb(request.responseText, undefined);
+    } else if (request.readyState == 4) {
+      cb(undefined, "could not fetch the data");
+    }
+  });
+}
 
-// function handleData(data, err) {
-//   if (data && !err) {
-//     console.log(data);
-//   } else {
-//     console.error(err);
-//   }
-// }
-
-// sendRequest(url, handleData);
+sendRequest(url, (data, err) => {
+  if (data && !err) {
+    console.log(data);
+    sendRequest(url, (data, err) => {
+      if (data && !err) {
+        console.log(data);
+        sendRequest(url, (data, err) => {
+          if (data && !err) {
+            console.log(data);
+            sendRequest(url, (data, err) => {
+              if (data && !err) {
+                console.log(data);
+              } else {
+                console.error(err);
+              }
+            });
+          } else {
+            console.error(err);
+          }
+        });
+      } else {
+        console.error(err);
+      }
+    });
+  } else {
+    console.error(err);
+  }
+});
