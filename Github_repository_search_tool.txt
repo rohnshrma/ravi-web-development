@@ -1,0 +1,59 @@
+Assignment: GitHub Repository Search Tool
+
+Project Overview
+
+Create a JavaScript project that allows users to search for GitHub repositories based on a topic or keyword. The app will use the GitHub API to fetch data, display a list of repositories, and provide additional details like the owner’s name, stars, and a link to the repository. The project must be implemented using async/await, promises, and XML HTTP requests.
+
+/**
+ * Assignment: GitHub Repository Search Tool
+ *
+ * 1. **Objective**:
+ *    - Build a project where users can search for GitHub repositories by providing a keyword or topic.
+ *    - Display relevant repositories along with additional details.
+ *    - Allow users to click on a repository to navigate to its GitHub page.
+ *
+ * 2. **Requirements**:
+ *    - Use `async/await` with promises to handle asynchronous XML HTTP requests.
+ *    - Use the GitHub REST API (https://api.github.com).
+ *    - Ensure the app handles errors gracefully (e.g., invalid input, no internet).
+ *    - The UI should be simple and clean, using plain HTML/CSS/JS (no frameworks).
+ *
+ * 3. **Features**:
+ *    - Input field for the user to type a keyword/topic (e.g., "javascript").
+ *    - Fetch the first 10 repositories from the GitHub API based on the keyword.
+ *    - Display the following repository details in a list:
+ *        a. Repository name
+ *        b. Owner's name
+ *        c. Star count
+ *        d. Link to the repository
+ *    - Provide feedback for invalid searches or when no repositories are found.
+ *
+ * 4. **Steps to Implement**:
+ *    a. **HTML**:
+ *       - Create an input field for the search term and a button to trigger the search.
+ *       - Add a `<div>` to display the results or error messages.
+ *
+ *    b. **JavaScript**:
+ *       - Create a function `fetchRepositories` that:
+ *          i. Accepts a search term as input.
+ *          ii. Uses XML HTTP requests to send an HTTP GET request to the GitHub API's search endpoint: 
+ *              `https://api.github.com/search/repositories?q=KEYWORD`.
+ *          iii. Wraps the request in a promise and resolves with the response or rejects with an error.
+ *       - Create an `async` function `searchRepositories` that:
+ *          i. Calls `fetchRepositories` using `await`.
+ *          ii. Parses and displays the repository data on the page.
+ *          iii. Handles errors and displays appropriate error messages.
+ *
+ *    c. **CSS**:
+ *       - Style the input field, button, and results for a clean, responsive design.
+ *
+ * 5. **Extra Features (Optional)**:
+ *    - Add pagination to fetch and display more repositories.
+ *    - Allow sorting of results by stars, forks, or name.
+ *    - Display additional information like the repository's description or programming language.
+ *
+ * 6. **Deliverables**:
+ *    - A functional HTML file with linked CSS and JS files.
+ *    - A working project where users can search and view GitHub repositories.
+ *    - Clear error handling for invalid input or API errors.
+ */
