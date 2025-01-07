@@ -17,6 +17,29 @@ function fetchWeather(city) {
   });
 }
 
-fetchWeather("gurgaon")
-  .then((data) => console.log(data))
-  .catch((err) => console.error(err));
+// fetchWeather("gurgaon")
+//   .then((data) => {
+//     console.log(data);
+//     fetchWeather("noida")
+//       .then((data) => {
+//         console.log(data);
+//         fetchWeather("agra")
+//           .then((data) => {
+//             console.log(data);
+//             fetchWeather("tokyo")
+//               .then((data) => {
+//                 console.log(data);
+//               })
+//               .catch((err) => console.error(err));
+//           })
+//           .catch((err) => console.error(err));
+//       })
+//       .catch((err) => console.error(err));
+//   })
+//   .catch((err) => console.error(err));
+
+// fetchWeather("tokyo")
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => console.error(err));
