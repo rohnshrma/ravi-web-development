@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-display {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.text-display span {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin: 2px;
+}
+.correct {
+  background-color: green;
+  color: white;
+}
+.incorrect {
+  background-color: red;
+  color: white;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.timer {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.result {
+  font-size: 18px;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
