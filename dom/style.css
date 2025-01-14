@@ -3,3 +3,10 @@
   color: #fff;
   text-shadow: -4px 4px 0 #000;
 }
+
+.grow {
+  transform: scale(1.5);
+}
+.rotate {
+  transform: rotate(15deg);
+}
