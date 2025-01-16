@@ -85,7 +85,12 @@ function addToCart(item_id) {
 
   // If the item exists, add it to the cart and update the cart display.
   if (item) {
-    cart.addItem(item);
+    const cartItem = cart.items.find((cartItem) => cartItem.id === item_id);
+    if (cartItem) {
+      cartItem.quantity += 1;
+    } else {
+      cart.items.push({ ...item, quantity: 1 });
+    }
     renderCart();
   }
 }
@@ -109,14 +114,23 @@ function renderCart() {
       (item) => `
         <div class="cart-item">
           <img src="./images/${item.image}" alt="" srcset="" class="cardImage">
-          <p class="itemDescription">${item.name} - ${item.price}</p>
-          <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})">Remove</button>
+          <p class="itemDescription">${item.name} X ${item.quantity} : ${
+        item.price * item.quantity
+      } </p>
+          <button class="btn btn-danger btn-sm" onclick="removeFromCart(${
+            item.id
+          })">Remove</button>
         </div>`
     )
     .join(""); // Combine all cart item HTML into a single string.
 
+  const totalPrice = cart.items.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
+
   // Update the total price display with the calculated total.
-  totalPriceDiv.innerText = `Total : $${cart.calculateTotal()}`;
+  totalPriceDiv.innerText = `Total : $${totalPrice}`;
 }
 
 // Call the renderMenu function to initially load and display the menu.

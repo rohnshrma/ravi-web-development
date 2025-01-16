@@ -13,7 +13,6 @@ body {
   padding: 15px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
- 
 }
 
 button {
@@ -26,7 +25,7 @@ h1 {
 h2 {
   color: #333;
 }
-.card{
+.card {
   position: fixed;
   height: auto;
   min-height: 470px;
@@ -34,102 +33,86 @@ h2 {
   right: 20px;
   bottom: 20px;
 }
-.container{
+.container {
   display: flex;
   width: 100%;
 }
-.menu{
+.menu {
   width: 100%;
 }
-.total-amount{
-
+.total-amount {
   position: absolute;
   bottom: 50px;
-
-
 }
-.place-order-btn{
+.place-order-btn {
   position: absolute;
   bottom: 0;
   width: 100%;
-
-
-  
 }
-.image{
+.image {
   width: 250px;
-    height: auto;
-    height: 150px;
-    object-fit: cover;
-
+  height: auto;
+  height: 150px;
+  object-fit: cover;
 }
 
-.menu-items{
+.menu-items {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 10px;
   margin: 10px;
   width: 270px;
   padding: 10px;
 }
-.itemName{
-font-size: 14px;
-margin: 0;
+.itemName {
+  font-size: 14px;
+  margin: 0;
 }
 
-.itemDescription{
+.itemDescription {
   font-size: 12px;
-margin: 0;
-
+  margin: 0;
 }
-h2{
+h2 {
   background: beige;
   padding: 0px 10px;
   font-family: fantasy;
 }
 
-
 #cartItems {
-
-  padding: 5px; 
+  padding: 5px;
   overflow-y: scroll;
   height: 340px;
   scrollbar-width: none;
-
-
 }
 
 .cart-item {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  align-items: center; 
-  margin-bottom: 5px; 
-  padding: 5px; 
-  background-color: #fff; 
-  border: 1px solid #ddd; 
-  border-radius: 4px; 
-  transition: transform 0.2s; 
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.2s;
 }
-
-
 
 .cart-item h6 {
-  margin: 0; 
-  font-size: 16px; 
-  color: #333; 
-  font-weight: 600; 
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
 }
-
 
 .cart-item .btn-danger:hover {
-  background-color: #cc1f1a; 
+  background-color: #cc1f1a;
 }
 
-.cardImage{
+.cardImage {
   width: 35px;
   height: 35px;
   object-fit: cover;
   border-radius: 17.5px;
-
 }
 .col-md-6 {
   -ms-flex: 0 0 50%;
