@@ -1,8 +1,8 @@
 class FoodItem {
-  constructor(id, image, title, name, price, category, description) {
+  constructor(id, image, subCategory, name, price, category, description) {
     this.id = id;
     this.image = image;
-    this.title = title;
+    this.subCategory = subCategory;
     this.name = name;
     this.price = price;
     this.category = category;
