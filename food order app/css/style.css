@@ -2,6 +2,8 @@
 
 body {
   font-family: Poppins;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-item,
@@ -11,6 +13,7 @@ body {
   padding: 15px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
+ 
 }
 
 button {
@@ -22,4 +25,114 @@ h1 {
 
 h2 {
   color: #333;
+}
+.card{
+  position: fixed;
+  height: auto;
+  min-height: 470px;
+  width: 267px;
+  right: 20px;
+  bottom: 20px;
+}
+.container{
+  display: flex;
+  width: 100%;
+}
+.menu{
+  width: 100%;
+}
+.total-amount{
+
+  position: absolute;
+  bottom: 50px;
+
+
+}
+.place-order-btn{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+
+  
+}
+.image{
+  width: 250px;
+    height: auto;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.menu-items{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 270px;
+  padding: 10px;
+}
+.itemName{
+font-size: 14px;
+margin: 0;
+}
+
+.itemDescription{
+  font-size: 12px;
+margin: 0;
+
+}
+h2{
+  background: beige;
+  padding: 0px 10px;
+  font-family: fantasy;
+}
+
+
+#cartItems {
+
+  padding: 5px; 
+  overflow-y: scroll;
+  height: 340px;
+  scrollbar-width: none;
+
+
+}
+
+.cart-item {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 5px; 
+  padding: 5px; 
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  transition: transform 0.2s; 
+}
+
+
+
+.cart-item h6 {
+  margin: 0; 
+  font-size: 16px; 
+  color: #333; 
+  font-weight: 600; 
+}
+
+
+.cart-item .btn-danger:hover {
+  background-color: #cc1f1a; 
+}
+
+.cardImage{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 17.5px;
+
+}
+.col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 30%;
 }

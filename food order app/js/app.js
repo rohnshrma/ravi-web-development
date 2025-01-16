@@ -4,6 +4,7 @@ const cart = new Cart();
 const menuItemsDiv = document.getElementById("menuItems");
 const cartItemsDiv = document.getElementById("cartItems");
 const totalPriceDiv = document.getElementById("totalPrice");
+const cardMainDiv = document.querySelector('.card')
 
 async function renderMenu() {
   console.log("rendering menu");
@@ -18,8 +19,9 @@ function displayMenu(items) {
     .map((item) => {
       return `<div class="col-md-6">
             <div class="menu-items">
-            <h4>${item.name} - $${item.price}</h4>
-            <p>${item.description}</p>
+            <img src="./images/${item.image}" alt="" srcset="" class="image">
+            <p class="itemName">${item.name} - $${item.price}</p>
+            <p class="itemDescription">${item.description}</p>
             <button class='btn btn-primary btn-sm' onclick='addToCart(${item.id})'>Add to Cart</button>
             </div>
         </div>`;
@@ -41,12 +43,19 @@ function renderCart() {
     totalPriceDiv.innerText = "Total : $0";
     return;
   }
+  else {
+    cardMainDiv.style.display = ''
+    menuItemsDiv.style.width = '1000px'
+
+
+  }
 
   cartItemsDiv.innerHTML = cart.items
     .map(
       (item) => `
     <div class="cart-item">
-    <h4>${item.name} - ${item.price}</h4>
+    <img src="./images/${item.image}" alt="" srcset="" class="cardImage">
+    <p class="itemDescription">${item.name} - ${item.price}</p>
     <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})">Remove</button>
     </div>`
     )
@@ -55,3 +64,4 @@ function renderCart() {
 }
 
 renderMenu();
+cardMainDiv.style.display = 'none'
