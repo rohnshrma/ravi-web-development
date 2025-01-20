@@ -114,12 +114,10 @@ function renderCart() {
       (item) => `
         <div class="cart-item">
           <img src="./images/${item.image}" alt="" srcset="" class="cardImage">
-          <p class="itemDescription">${item.name} X ${item.quantity} : ${
-        item.price * item.quantity
-      } </p>
-          <button class="btn btn-danger btn-sm" onclick="removeFromCart(${
-            item.id
-          })">Remove</button>
+          <p class="itemDescription">${item.name} <span style="color:blue">X ${item.quantity} : ${item.price * item.quantity
+        }</span> </p>
+          <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id
+        })">Remove</button>
         </div>`
     )
     .join(""); // Combine all cart item HTML into a single string.

@@ -29,7 +29,7 @@ h2 {
   position: fixed;
   height: auto;
   min-height: 470px;
-  width: 267px;
+  width: 300px;
   right: 20px;
   bottom: 20px;
 }
@@ -71,6 +71,7 @@ h2 {
 .itemDescription {
   font-size: 12px;
   margin: 0;
+  width: 125px;
 }
 h2 {
   background: beige;
